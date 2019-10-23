@@ -135,3 +135,14 @@ Things you may want to cover:
 - has_many :voice_actors, through: :animes_voice_actors
 - has_many :reviews
 
+## animes_voice_actorsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|anime_id|references|null: false, foreign_key: true|
+|voice_actor_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :anime
+- belongs_to :voice_actor
+
