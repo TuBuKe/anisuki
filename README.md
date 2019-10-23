@@ -119,3 +119,19 @@ Things you may want to cover:
 - has_many :animes_voice_actors
 - has_many :animes, through: :animes_voice_actors
 
+## animesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|image|string|
+|airing_time|date|
+|likes|integer|null: false|
+|dislikes|integer|null: false|
+
+### Association
+- has_many :groups
+- has_many :animes_voice_actors
+- has_many :voice_actors, through: :animes_voice_actors
+- has_many :reviews
+
