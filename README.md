@@ -38,3 +38,22 @@ Things you may want to cover:
 - has_many :users_groups
 - has_many :groups, through: :users_groups
 
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|likes|integer|null: false|
+|dislikes|integer|null: false|
+|anime_id|references|foreign_key: true|
+|voice_actor_id|references|foreign_key: true|
+
+### Association
+- has_many :posts
+- has_many :users_groups
+- has_many :users, through: :users_groups
+- has_many :groups_tags
+- has_many :tags, through: :groups_tags
+- belongs_to :voice_actor
+- belongs_to :anime
+
