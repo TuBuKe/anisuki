@@ -146,3 +146,14 @@ Things you may want to cover:
 - belongs_to :anime
 - belongs_to :voice_actor
 
+## reviewsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|body|text|null: false|
+|likes|integer|null: false|
+|dislikes|integer|null: false|
+|anime_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :anime
