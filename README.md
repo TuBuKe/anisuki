@@ -104,3 +104,18 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :tag
 
+## voice_actorsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|image|string|
+|birthday|date|
+|likes|integer|null: false|
+|dislikes|integer|null: false|
+
+### Association
+- has_many :groups
+- has_many :animes_voice_actors
+- has_many :animes, through: :animes_voice_actors
+
