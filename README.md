@@ -68,3 +68,18 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :group
 
+## postsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|body|text|
+|image|string|
+|likes|integer|null: false|
+|dislikes|integer|null: false|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group
+
