@@ -57,3 +57,14 @@ Things you may want to cover:
 - belongs_to :voice_actor
 - belongs_to :anime
 
+## users_groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group
+
