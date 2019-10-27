@@ -1,0 +1,2 @@
+module AnisukisHelper
+end

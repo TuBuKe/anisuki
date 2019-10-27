@@ -1,0 +1,2 @@
+class AnisukisController < ApplicationController
+end
